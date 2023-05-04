@@ -1,4 +1,4 @@
-package com.example.appointment
+package com.example.appointment.models
 
 data class Model (
     var empId: String? = null,
