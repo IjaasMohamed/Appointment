@@ -27,7 +27,7 @@
         android:paddingTop="80dp" />
 
     <EditText
-        android:id="@+id/etEmpSalary"
+        android:id="@+id/etDoctorName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -38,7 +38,7 @@
         android:text="Doctor Name" />
 
     <Button
-        android:id="@+id/btnInsertData2"
+        android:id="@+id/btnSaveData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

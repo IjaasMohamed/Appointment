@@ -1,6 +1,8 @@
 package com.example.appointment
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -11,10 +13,49 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.appointment.ui.theme.AppointmentTheme
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class InsertionActivity : ComponentActivity() {
+
+    private lateinit var etEmpName : EditText
+    private lateinit var etEmpAge : EditText
+    private lateinit var etDoctorName : EditText
+    private lateinit var btnSaveData : Button
+
+    private lateinit var dbRef : DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_insertion)
+
+        etEmpName = findViewById(R.id.etEmpName)
+        etEmpAge = findViewById(R.id.etEmpAge)
+        etDoctorName = findViewById(R.id.etDoctorName)
+        btnSaveData =findViewById(R.id.btnSaveData)
+
+        dbRef = FirebaseDatabase.getInstance().getReference("Employees")
+
+        btnSaveData.setOnClickListener(){
+            saveEmployeeData()
+        }
+    }
+
+    private fun saveEmployeeData(){
+        val empName = etEmpName.text.toString()
+        val empAge = etEmpAge.text.toString()
+        val docName = etDoctorName.text.toString()
+
+        if(empName.isEmpty()){
+            etEmpName.error = "Please enter Patient Name"
+        }
+        if (empAge.isEmpty()){
+            etEmpAge.error = "Please enter Patient's Age"
+        }
+        if (docName.isEmpty()){
+            etDoctorName.error = "Please enter the name of assigned Doctor"
+        }
+        val empId = dbRef.push().key!!
 
     }
 }
