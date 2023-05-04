@@ -3,6 +3,7 @@ package com.example.appointment
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -57,5 +58,14 @@ class InsertionActivity : ComponentActivity() {
         }
         val empId = dbRef.push().key!!
 
+        val employee = Model(empId, empName,empAge, docName )
+
+        //child here creates a copy with using the id
+        dbRef.child(empId).setValue(employee)
+            .addOnCompleteListener{
+                Toast.makeText(this,"Data Inserted Successfully", Toast.LENGTH_LONG).show()
+            }.addOnFailureListener{err ->
+                Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_LONG ).show()
+            }
     }
 }
