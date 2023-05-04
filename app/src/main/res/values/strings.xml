@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Appointment</string>
+    <string name="header">Make an - Appointment</string>
+    <string name="title_activity_insertion">InsertionActivity</string>
+</resources>
