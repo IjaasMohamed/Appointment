@@ -66,7 +66,7 @@ class FetchingActivity : ComponentActivity() {
                             intent.putExtra("empId", empList[position].empId)
                             intent.putExtra("empName", empList[position].empName)
                             intent.putExtra("empAge", empList[position].empAge)
-                            intent.putExtra("empSalary", empList[position].docName)
+                            intent.putExtra("etDoctorName", empList[position].docName)
                             startActivity(intent)
                         }
 
