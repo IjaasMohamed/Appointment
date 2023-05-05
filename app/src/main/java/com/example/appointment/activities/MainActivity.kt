@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
         btnFetchData.setOnClickListener{
-            val intent = Intent(this, InsertionActivity::class.java)
+            val intent = Intent(this, FetchingActivity::class.java)
             startActivity(intent)
         }
     }
