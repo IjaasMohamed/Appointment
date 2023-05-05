@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#8BC34A"
         android:text="Update"
         app:layout_constraintEnd_toStartOf="@+id/btnDelete"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#8BC34A"
         android:text="Delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -54,7 +56,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="#DCDCDC">
+                android:background="#DCDCDC"
+                android:backgroundTint="#4CAF50">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -103,7 +106,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="#DCDCDC">
+                android:background="#DCDCDC"
+                android:backgroundTint="#4CAF50">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -153,7 +157,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="#DCDCDC">
+                android:background="#DCDCDC"
+                android:backgroundTint="#4CAF50">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -207,7 +212,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="#DCDCDC">
+                android:background="#DCDCDC"
+                android:backgroundTint="#4CAF50">
 
                 <TextView
                     android:layout_width="match_parent"

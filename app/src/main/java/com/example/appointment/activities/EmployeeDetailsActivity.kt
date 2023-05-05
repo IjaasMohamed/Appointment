@@ -23,6 +23,13 @@ class EmployeeDetailsActivity : ComponentActivity() {
         initView()
         setValuesToViews()
 
+        btnUpdate.setOnClickListener{
+            openUpdateDialog(
+                intent.getStringExtra("empid").toString(),
+                intent.getStringExtra("empName").toString(),
+            )
+        }
+
     }
 
     private fun initView() {
@@ -40,6 +47,12 @@ class EmployeeDetailsActivity : ComponentActivity() {
         tvEmpName.text = intent.getStringExtra("empName")
         tvEmpAge.text = intent.getStringExtra("empAge")
         etDoctorName.text = intent.getStringExtra("etDoctorName")
+
+    }
+    private fun openUpdateDialog(
+        empId:String,
+        empName:String
+    ){
 
     }
 }
