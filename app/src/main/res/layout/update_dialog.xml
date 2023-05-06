@@ -24,12 +24,12 @@
         android:textSize="24dp" />
 
     <EditText
-        android:id="@+id/etEmpSalary"
+        android:id="@+id/etDoctorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Employee Salary"
+        android:hint="Doctor Name"
         android:inputType="textPersonName"
         android:textSize="24dp" />
 
