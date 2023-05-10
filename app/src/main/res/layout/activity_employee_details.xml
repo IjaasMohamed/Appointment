@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2023_05_10_at_11_45_54"
     tools:context=".activities.EmployeeDetailsActivity">
 
     <Button
@@ -13,6 +14,7 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="#8BC34A"
         android:text="Update"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btnDelete"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +27,7 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="#8BC34A"
         android:text="Delete"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnUpdate"
@@ -34,10 +37,10 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
@@ -65,7 +68,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Patient ID"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -115,7 +118,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Patient Name"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -166,7 +169,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Patient Age"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp"
 
 
@@ -222,7 +225,7 @@
 
                     android:gravity="center"
                     android:text="Doctor Name"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp"
 
 
