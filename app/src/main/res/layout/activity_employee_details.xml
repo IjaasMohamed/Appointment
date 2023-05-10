@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#8BC34A"
+        android:backgroundTint="#B6AA40"
         android:text="Update"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btnDelete"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#8BC34A"
+        android:backgroundTint="#B6AA40"
         android:text="Delete"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:background="#DCDCDC"
-                android:backgroundTint="#4CAF50">
+                android:backgroundTint="#B6AA40">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:background="#DCDCDC"
-                android:backgroundTint="#4CAF50">
+                android:backgroundTint="#B6AA40">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:background="#DCDCDC"
-                android:backgroundTint="#4CAF50">
+                android:backgroundTint="#B6AA40">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -216,7 +216,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:background="#DCDCDC"
-                android:backgroundTint="#4CAF50">
+                android:backgroundTint="#B6AA40">
 
                 <TextView
                     android:layout_width="match_parent"
