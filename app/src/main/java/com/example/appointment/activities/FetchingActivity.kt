@@ -54,6 +54,9 @@ class FetchingActivity : ComponentActivity() {
                         val empData = empSnap.getValue(Model::class.java)
                         empList.add(empData!!)
                     }
+                    empList.sortBy {
+                        it.empId
+                    }
                     val mAdapter = EmpAdapter(empList)
                     empRecyclerView.adapter = mAdapter
 
